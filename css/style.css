@@ -1,0 +1,117 @@
+
+:root {
+    --default: #000000;
+    --button-outline-grey: #222;
+    --button-outline-light-gray: #555;
+}
+body{
+    background-color: var(--default);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+  border-radius: 0;
+  min-height: 80px;
+}
+.navbar-brand {
+    font-size: 3.5rem;
+}
+.navbar-default {
+    background: var(--default);
+    border-color: var(--default);
+}
+#navigacija .hover {
+    font-size: 2rem !important;
+}
+#navigacija .hover:hover {
+    color: #fff;
+}
+.mt-10 {
+    margin-top: 10rem;
+}
+.mtb-10 {
+    margin: 10rem auto;    
+}
+#background {
+    background: url("https://picsum.photos/1700/700/?random") no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+}
+#first_photo{
+    background: url("../img/firstphoto.jpeg") no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 700px;
+}
+#background .jumbotron {
+    background: rgba(255,255,255, 0.4);
+    margin: auto;
+}
+.text-dark {
+    color: rgba(0,0,0, 0.6);
+}
+.m-auto {
+    margin: 0 auto;
+}
+.outline {
+    background: transparent;
+    border-radius: 0;
+    color: var(--button-outline-grey);
+    border:1px solid var(--button-outline-grey);
+    transition: all 0.3s ease-in-out;
+}
+.outline:hover,.outline:active, .outline:focus {
+    background: var(--button-outline-grey);
+    color: #fff;
+    border: 1px solid var(--button-outline-grey);
+}
+.light-outline {
+    background: transparent;
+    border-radius: 0;
+    color: var(--button-outline-light-gray);
+    border:1px solid var(--button-outline-light-gray);
+    transition: all 0.3s ease-in-out;
+}
+.light-outline:hover, .light-outline:active, .light-outline:focus {
+    background: var(--button-outline-light-gray);
+    color: #fff;
+    border: 1px solid var(--button-outline-light-gray);
+}
+.greyscale {
+    filter: grayscale(100%);
+}
+@media(max-width: 991px) {
+    .navbar {
+        justify-content: space-around;
+    }
+}
+.separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+    min-height: 500px;
+}
+.separator h1  {
+    font-size: 5rem;
+    color: rgba(255,255,255, 0.5);
+}
+.separator p {
+    font-size: 2.5rem;
+} 
+.separator a {
+    width:48px; 
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#second_photo{
+    background: url("../img/secondphoto.jpeg") no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 700px;
+    
+}
