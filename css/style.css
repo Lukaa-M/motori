@@ -3,9 +3,17 @@
     --default: #000000;
     --button-outline-grey: #222;
     --button-outline-light-gray: #555;
+   
 }
 body{
     background-color: var(--default);
+}
+a{
+    text-decoration: none;
+    color: var(--button-outline-light-gray);
+}
+li{
+    list-style: none;
 }
 .navbar {
     display: flex;
@@ -15,6 +23,7 @@ body{
 }
 .navbar-brand {
     font-size: 3.5rem;
+    transform: translateY(-70%);
 }
 .navbar-default {
     background: var(--default);
@@ -114,4 +123,55 @@ body{
     width: 100%;
     min-height: 700px;
     
+}
+#sep3{
+    min-height: 300px;
+}
+#ftmreze{
+    display: flex;
+    flex-direction: row;
+    transform: translateX(25%);
+}
+#ftmreze li{
+    margin: 0 50px;
+
+}
+#ftmeni {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-10%);
+    
+}
+#ftmeni li{
+     margin: 0 40px;
+}
+#ftmeni a {
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+#ftmeni a:hover{
+    color: white;
+}
+#shop .col-md-4 {
+    height: 300px;
+    margin-bottom: 100px; 
+
+}
+#shop .col-md-4:nth-child(1),
+#shop .col-md-4:nth-child(2),
+#shop .col-md-4:nth-child(3){
+    margin-top: 100px; 
+}
+#shop .thumbnail img{
+    height: 200px;
+    width: 100%;
+}
+#shop .btn-org{
+    background-color: orangered;
+    border: 1px solid orangered;
+    
+}
+#shop .grey{
+    filter: grayscale(100%);
 }
