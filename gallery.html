@@ -23,7 +23,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="300px" height="100px"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo" width="300px" height="100px">
+                </a>
             </div>
 
 
@@ -54,12 +56,81 @@
         </div>
 
     </nav>
-   
+
+    <!-- #Gallery-->
+
+    <div id="gallery" class="container">
+
+        <div class=" scroll none ">                         <!-- A ovde mile skinuo sam row i columns iznerviro se, jer sam hteo jednu po jednu, a ne sve tri slike da iskoce-->
+
+            <img src="img\img7.jpg" alt="gslika" class="size">
+
+
+        </div>
+
+        <div class=" scroll none ">                         <!-- Onda dodavao klase za img slider"scroll, none " -->
+
+            <img src="img\img8.jpg" alt="gslika" class="size">
+
+
+        </div>
+
+        <div class=" scroll none ">
+
+            <img src="img\img9.jpg" alt="gslika" class="size">                        
+
+
+        </div>
     
 
 
+        <div class=" scroll none ">
 
-    
+            <img src="img\img10.jpg" alt="gslika" class="size">
+
+
+        </div>
+
+        <div class=" scroll none ">
+
+            <img src="img\img11.jpg" alt="gslika" class="size">
+
+
+        </div>
+
+        <div class=" scroll none ">
+
+            <img src="img\img12.jpg" alt="gslika" class="size">
+
+
+        </div>
+        
+
+
+
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("scroll");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {                                      //Stavio loma ali brt i pre njega je bio dole scroll :(
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+    <!-- #Gallery -->
+
+
 
 
 
