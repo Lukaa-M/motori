@@ -1,0 +1,13 @@
+:root {
+  --default: #000000;
+  --button-outline-grey: #222;
+  --button-outline-light-gray: #555;
+}
+@import "variables";
+@import "bootstrap-reset";
+@import "utilities";
+@import "header";
+@import "index-page";
+@import "shop-page";
+@import "footer";
+@import "primer";

@@ -1,0 +1,45 @@
+#background {
+  background: url("https://picsum.photos/1700/700/?random") no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 800px;
+  display: flex;
+  .jumbotron {
+    background: rgba(255, 255, 255, 0.4);
+    margin: auto;
+  }
+}
+#first_photo {
+  background: url("../img/firstphoto.jpeg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 700px;
+}
+#second_photo {
+  background: url("../img/secondphoto.jpeg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 700px;
+}
+.separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  min-height: 500px;
+  h1 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  a {
+    width: 48px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}

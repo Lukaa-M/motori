@@ -1,0 +1,33 @@
+$boja: red;
+
+
+@media (min-width:768px){
+    
+
+
+}
+
+#primer{
+    width: 100%;
+    padding: 10%;
+    a{
+        text-align: center;
+        &:hover{
+            
+            color: lighten($color: #7a0707, $amount: 0);
+            
+            
+
+        }
+
+    }
+
+    @media (min-width:768px){
+        text-align: center;
+
+
+    }
+    
+
+
+}

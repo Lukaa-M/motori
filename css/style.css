@@ -1,225 +1,244 @@
 :root {
-    --default: #000000;
-    --button-outline-grey: #222;
-    --button-outline-light-gray: #555;
+  --default: #000000;
+  --button-outline-grey: #222;
+  --button-outline-light-gray: #555;
 }
 
 body {
-    background-color: var(--default);
+  background-color: var(--default);
 }
 
 a {
-    text-decoration: none;
-    color: var(--button-outline-light-gray);
+  text-decoration: none;
+  color: var(--button-outline-light-gray);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    border-radius: 0;
-    min-height: 80px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  min-height: 80px;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    justify-content: space-around;
+  }
 }
 
 .navbar-brand {
-    font-size: 3.5rem;
-    transform: translateY(-70%);
+  font-size: 3.5rem;
+  transform: translateY(-70%);
 }
 
 .navbar-default {
-    background: var(--default);
-    border-color: var(--default);
+  background: var(--default);
+  border-color: var(--default);
 }
 
-#navigacija .hover {
-    font-size: 2rem !important;
+.carousel-inner {
+  height: 600px;
 }
 
-#navigacija .hover:hover {
-    color: #fff;
+.carousel-inner .item {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carousel-inner .item img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .mt-10 {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 .mtb-10 {
-    margin: 10rem auto;
-}
-
-#background {
-    background: url("https://picsum.photos/1700/700/?random") no-repeat center top;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 800px;
-    display: flex;
-}
-
-#first_photo {
-    background: url("../img/firstphoto.jpeg") no-repeat center top;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 700px;
-}
-
-#background .jumbotron {
-    background: rgba(255, 255, 255, 0.4);
-    margin: auto;
+  margin: 10rem auto;
 }
 
 .text-dark {
-    color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .m-auto {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .outline {
-    background: transparent;
-    border-radius: 0;
-    color: var(--button-outline-grey);
-    border: 1px solid var(--button-outline-grey);
-    transition: all 0.3s ease-in-out;
+  background: transparent;
+  border-radius: 0;
+  color: var(--button-outline-grey);
+  border: 1px solid var(--button-outline-grey);
+  transition: all 0.3s ease-in-out;
 }
 
-.outline:hover,
-.outline:active,
-.outline:focus {
-    background: var(--button-outline-grey);
-    color: #fff;
-    border: 1px solid var(--button-outline-grey);
+.outline:hover, .outline:active, .outline:focus {
+  background: var(--button-outline-grey);
+  color: #fff;
+  border: 1px solid var(--button-outline-grey);
 }
 
 .light-outline {
-    background: transparent;
-    border-radius: 0;
-    color: var(--button-outline-light-gray);
-    border: 1px solid var(--button-outline-light-gray);
-    transition: all 0.3s ease-in-out;
+  background: transparent;
+  border-radius: 0;
+  color: var(--button-outline-light-gray);
+  border: 1px solid var(--button-outline-light-gray);
+  transition: all 0.3s ease-in-out;
 }
 
-.light-outline:hover,
-.light-outline:active,
-.light-outline:focus {
-    background: var(--button-outline-light-gray);
-    color: #fff;
-    border: 1px solid var(--button-outline-light-gray);
+.light-outline:hover, .light-outline:active, .light-outline:focus {
+  background: var(--button-outline-light-gray);
+  color: #fff;
+  border: 1px solid var(--button-outline-light-gray);
 }
 
 .greyscale {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-@media(max-width: 991px) {
-    .navbar {
-        justify-content: space-around;
-    }
+.none {
+  display: none;
 }
 
-.separator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem 0;
-    min-height: 500px;
+#navigacija .hover {
+  font-size: 2rem !important;
 }
 
-.separator h1 {
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.5);
+#navigacija .hover:hover {
+  color: #fff;
 }
 
-.separator p {
-    font-size: 2.5rem;
+#background {
+  background: url("https://picsum.photos/1700/700/?random") no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 800px;
+  display: flex;
 }
 
-.separator a {
-    width: 48px;
-    margin: 0 auto;
-    border-radius: 5px;
+#background .jumbotron {
+  background: rgba(255, 255, 255, 0.4);
+  margin: auto;
+}
+
+#first_photo {
+  background: url("../img/firstphoto.jpeg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 700px;
 }
 
 #second_photo {
-    background: url("../img/secondphoto.jpeg") no-repeat center top;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 700px;
+  background: url("../img/secondphoto.jpeg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 700px;
 }
 
-#sep3 {
-    min-height: 300px;
+.separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  min-height: 500px;
 }
 
-#ftmreze {
-    display: flex;
-    flex-direction: row;
-    transform: translateX(25%);
+.separator h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-#ftmreze li {
-    margin: 0 50px;
+.separator p {
+  font-size: 2.5rem;
 }
 
-#ftmeni {
-    display: flex;
-    flex-direction: row;
-    transform: translateX(-10%);
-}
-
-#ftmeni li {
-    margin: 0 40px;
-}
-
-#ftmeni a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-#ftmeni a:hover {
-    color: white;
+.separator a {
+  width: 48px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 #shop .col-md-4 {
-    height: 300px;
-    margin-bottom: 100px;
+  height: 300px;
+  margin-bottom: 100px;
 }
 
-#shop .col-md-4:nth-child(1),
-#shop .col-md-4:nth-child(2),
+#shop .col-md-4:nth-child(1) {
+  margin-top: 100px;
+}
+
+#shop .col-md-4:nth-child(2) {
+  margin-top: 100px;
+}
+
 #shop .col-md-4:nth-child(3) {
-    margin-top: 100px;
+  margin-top: 100px;
+}
+
+#shop .thumbnail .btn-org {
+  background-color: orangered;
+  border: 1px solid orangered;
+}
+
+#shop .thumbnail .grey {
+  filter: grayscale(100%);
 }
 
 #shop .thumbnail img {
-    height: 200px;
-    width: 100%;
+  height: 200px;
+  width: 100%;
 }
 
-#shop .btn-org {
-    background-color: orangered;
-    border: 1px solid orangered;
+#ftmeni {
+  display: flex;
 }
 
-#shop .grey {
-    filter: grayscale(100%);
+#ftmeni li {
+  margin: 0 40px;
 }
 
-#gallery {
-    display: flex;
-    width: 100%;
-    margin: 10px; /* ovo sam dodavao da bi se slika bila cela probaj pa vidi*/
+#ftmeni a {
+  text-decoration: none;
+  font-size: 20px;
 }
-.none{
-    display: none;
+
+#ftmeni a:hover {
+  color: white;
 }
-.size{
-    width: 1600px;
-    height: 800px;
-    
+
+#ftmreze {
+  display: flex;
 }
+
+#ftmreze li {
+  margin: 0 50px;
+}
+
+#primer {
+  width: 100%;
+  padding: 10%;
+}
+
+#primer a {
+  text-align: center;
+}
+
+#primer a:hover {
+  color: #7a0707;
+}
+
+@media (min-width: 768px) {
+  #primer {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

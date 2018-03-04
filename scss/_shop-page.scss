@@ -1,0 +1,24 @@
+#shop {
+  .col-md-4 {
+    height: 300px;
+    margin-bottom: 100px;
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        margin-top: 100px;
+      }
+    }
+  }
+  .thumbnail {
+    .btn-org {
+      background-color: orangered;
+      border: 1px solid orangered;
+    }
+    .grey {
+      filter: grayscale(100%);
+    }
+    img {
+      height: 200px;
+      width: 100%;
+    }
+  }
+}
