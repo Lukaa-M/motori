@@ -1,33 +1,39 @@
-$boja: red;
+$color: red;
 
 
-@media (min-width:768px){
-    
-
-
+.margin-top{
+    margin-top: 100px;
 }
+.sprt{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.container{
+    .row{
 
-#primer{
-    width: 100%;
-    padding: 10%;
-    a{
-        text-align: center;
-        &:hover{
-            
-            color: lighten($color: #7a0707, $amount: 0);
-            
-            
+        .media{
 
+            .media-left{
+
+                img{
+                    border-radius: 5px;
+
+                }
+            }
+            
+            
         }
 
     }
 
-    @media (min-width:768px){
-        text-align: center;
 
 
-    }
-    
-
-
+}
+.bold{
+    font-size: 25px;
+    color: $button-outline-light-gray;
+}
+.mbold{
+    font-weight: 18px;
+    color: $button-outline-light-gray;
 }

@@ -115,9 +115,10 @@ li {
 }
 
 #background {
-  background: url("https://picsum.photos/1700/700/?random") no-repeat center top;
+  background: url("../img/fimg2.jpg") no-repeat center top;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
   min-height: 800px;
   display: flex;
 }
@@ -128,7 +129,7 @@ li {
 }
 
 #first_photo {
-  background: url("../img/firstphoto.jpeg") no-repeat center top;
+  background: url("../img/firstphoto.jpg") no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -149,7 +150,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 3rem 0;
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .separator h1 {
@@ -223,22 +224,26 @@ li {
   margin: 0 50px;
 }
 
-#primer {
-  width: 100%;
-  padding: 10%;
+.margin-top {
+  margin-top: 100px;
 }
 
-#primer a {
-  text-align: center;
+.sprt {
+  margin-top: 40px;
+  margin-left: 80px;
 }
 
-#primer a:hover {
-  color: #7a0707;
+.container .row .media .media-left img {
+  border-radius: 5px;
 }
 
-@media (min-width: 768px) {
-  #primer {
-    text-align: center;
-  }
+.bold {
+  font-size: 25px;
+  color: #555;
+}
+
+.mbold {
+  font-weight: 18px;
+  color: #555;
 }
 /*# sourceMappingURL=style.css.map */
