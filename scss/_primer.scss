@@ -1,39 +1,78 @@
 $color: red;
+#inventors {
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
 
-
-.margin-top{
+.margin-top {
     margin-top: 100px;
 }
-.sprt{
-    margin-top: 40px;
-    margin-left: 80px;
-}
-.container{
-    .row{
 
-        .media{
-
-            .media-left{
-
-                img{
-                    border-radius: 5px;
-
-                }
-            }
-            
-            
-        }
-
+.sprt {
+     
+    @media(min-width:991px) {
+        margin-top: 40px;
+        margin-left: 80px;
     }
-
-
-
 }
-.bold{
+
+.sprtt {
+    @media(min-width: 991px) {
+        margin-top: 40px;
+        margin-left: 160px;
+    }
+}
+
+.bold {
     font-size: 25px;
     color: $button-outline-light-gray;
 }
-.mbold{
+
+.mbold {
     font-weight: 18px;
     color: $button-outline-light-gray;
+}
+
+.white {
+    color: rgba(#fff, 0.5);
+}
+@mixin inventors(){
+
+    @media (min-width: 480px) {
+        text-align: center;
+    }
+}
+#inventors{
+    .row{
+        @include inventors();
+    }
+}
+
+@mixin footer() {
+        display: flex;
+        @media(min-width: 480px) {
+            justify-content: space-around;
+        }
+        //xs480px 580px sm768px md991px lg1200px xl1440px
+        justify-content: space-between;
+}
+#footer {
+    #social {
+        @include footer();
+        img {
+            width: 60px;
+            height: 40px;
+        }
+    }
+    #footer-menu {
+        font-size: 2rem;
+        @include footer();
+    }
+}
+.margin-sm-top {
+    @media(max-width:768px) {
+        margin-top: 50px !important;
+    }
 }
