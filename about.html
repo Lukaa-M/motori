@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
     <title>Harley-Davidson</title>
 </head>
 
@@ -38,11 +39,11 @@
                         <a href="about.html" class="hover">About</a>
                     </li>
                     <li>
-                        <a href="#" class="hover">Login</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#login-modal">Login</a>
 
                     </li>
                     <li>
-                        <a href="#" class="hover">Register</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#login-modal1">Register</a>
 
                     </li>
                     <li>
@@ -127,7 +128,7 @@
                 </div>
                 <div class="col-sm-2 text-center copyright">
                     <p>Copyright &copy;</br>
-                         Luka Milovanovic
+                        Luka Milovanovic
                     </p>
                 </div>
                 <div class="col-sm-5 margin-sm-top">
@@ -152,6 +153,73 @@
             </div>
         </div>
     </section>
+
+    <aside class="modal fade" tabindex="-1" role="dialog" id="login-modal">
+        <section class="modal-dialog modal-dialog-centered" role="document">
+            <article class="modal-content bg-dark no-radius">
+                <form action="" method="post">
+                    <header class="modal-header border-dark">
+                        <h5 class="modal-title text-capitalize">Log In Here</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fa fa-close close"></span>
+                        </button>
+                    </header>
+                    <main class="modal-body border-dark">
+                        <article class="form-group">
+                            <input type="email" class="form-control form-control-lg no-radius transparent form-control-custom " placeholder="E-mail">
+                        </article>
+                        <article class="form-group">
+                            <input type="password" class="form-control form-control-lg no-radius transparent form-control-custom" placeholder="Password">
+                        </article>
+                    </main>
+                    <footer class="modal-footer border-dark d-flex justify-content-start">
+                        <button type="submit" class="btn btn-warning no-radius">Log in</button>
+                        <button type="reset" class="btn btn-outline-warning no-radius">Reset</button>
+                    </footer>
+                </form>
+            </article>
+        </section>
+    </aside>
+
+    <aside class="modal fade" tabindex="-1" role="dialog" id="login-modal1">
+        <section class="modal-dialog modal-dialog-centered" role="document">
+            <article class="modal-content bg-dark no-radius">
+                <form action="" method="post">
+                    <header class="modal-header border-dark">
+                        <h5 class="modal-title text-capitalize">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fa fa-close close"></span>
+                        </button>
+                    </header>
+                    <main class="modal-body border-dark">
+                        <article class="form-group">
+                            <input type="text-box" class="form-control form-control-lg no-radius transparent form-control-custom " placeholder="Name">
+                        </article>
+                        <article class="form-group">
+                            <input type="text-box" class="form-control form-control-lg no-radius transparent form-control-custom " placeholder="Last Name">
+                        </article>
+                        <article class="form-group">
+                            <input type="email" class="form-control form-control-lg no-radius transparent form-control-custom " placeholder="E-mail">
+                        </article>
+                        <article class="form-group">
+                            <input type="password" class="form-control form-control-lg no-radius transparent form-control-custom" placeholder="Password">
+                        </article>
+                    </main>
+                    <footer class="modal-footer border-dark d-flex justify-content-start">
+                        <button type="submit" class="btn btn-warning no-radius">Log in</button>
+                        <button type="reset" class="btn btn-outline-warning no-radius">Reset</button>
+                    </footer>
+                </form>
+            </article>
+        </section>
+    </aside>
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
