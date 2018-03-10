@@ -1,4 +1,4 @@
-$color: red;
+
 #inventors {
     img {
         width: 100%;
@@ -11,8 +11,7 @@ $color: red;
 }
 
 .sprt {
-     
-    @media(min-width:991px) {
+    @media(min-width: 991px) {
         margin-top: 40px;
         margin-left: 80px;
     }
@@ -38,26 +37,27 @@ $color: red;
 .white {
     color: rgba(#fff, 0.5);
 }
-@mixin inventors(){
 
+@mixin inventors() {
     @media (min-width: 480px) {
         text-align: center;
     }
 }
-#inventors{
-    .row{
+
+#inventors {
+    .row {
         @include inventors();
     }
 }
 
 @mixin footer() {
-        display: flex;
-        @media(min-width: 480px) {
-            justify-content: space-around;
-        }
-        //xs480px 580px sm768px md991px lg1200px xl1440px
-        justify-content: space-between;
+    display: flex;
+    @media(min-width: 480px) {
+        justify-content: space-around;
+    } //xs480px 580px sm768px md991px lg1200px xl1440px
+    justify-content: space-between;
 }
+
 #footer {
     #social {
         @include footer();
@@ -69,10 +69,33 @@ $color: red;
     #footer-menu {
         font-size: 2rem;
         @include footer();
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+            }
+            &:hover a{
+                color: white;
+            }
+        }
     }
 }
+
 .margin-sm-top {
-    @media(max-width:768px) {
+    @media(max-width: 768px) {
         margin-top: 50px !important;
     }
+}
+
+.s{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    
+}
+.logo{
+    width: 300px;
+    height: 100px;
 }
